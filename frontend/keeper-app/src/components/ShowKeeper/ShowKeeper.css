@@ -1,42 +1,89 @@
-.ShowKeeper{
+.ShowKeeper {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;  
 }
-.KeeperCard{
+.KeeperCard {
     display: flex;
     flex-direction: column;
-    background-color: red;
-    padding: 2rem;
-    border-radius: 20px;
-    width: 300px;
+    background-color: #1a252f;
+    padding: 1.5rem;
+    border-radius: 25px;
+    width: 380px;
     min-height: 250px;
-    margin: 2rem;
+    margin: 1rem;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.5)10px 10px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden; 
 }
-.title{
+.KeeperCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+.title {
     margin-bottom: 1rem;
     font-family: "Texturina", serif;
-    color: rgb(82, 171, 240);
+    color: lightblue;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 500;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
-.descriptionBox{
-    display: flex;
+.descriptionBox {
+    flex-grow: 1; 
+    min-height: 150px; 
     width: 100%;
-    resize: none;
-    flex: 1;
-    color: rgb(102, 201, 156);
-    font-family: "kanit", sans-serif;
+    background: transparent;
+    color: #3b7a57;
+    font-family: "Kanit", sans-serif;
     outline: none;
-    background: black;
+    padding: 1rem;
     border: none;
-}
-.deleteIcon{
-    color: white;
-    position: absolute;
-    right: 30px;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.5);
+    resize: none;
     font-size: 1rem;
+    transition: box-shadow 0.3s;
+}
+.descriptionBox:focus {
+    box-shadow: inset 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+.deleteIcon {
+    color: #c0392b;
+    font-size: 1.2rem;
     cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+.deleteIcon:hover {
+    transform: scale(1.2);
+    
+}
+.updateIcon{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+    margin-left: 1rem; 
+}
+.updateIcon:hover{
+    transform: scale(1.2);
+}
+.saveBtn{
+    color: white;
+    font-weight: bold;
+    background-color: #3b7a57;
+    margin-top: 10rem;
+    padding: 0.5rem 0.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
 }
