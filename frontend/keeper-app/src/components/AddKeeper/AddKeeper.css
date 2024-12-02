@@ -1,0 +1,41 @@
+.AddKeeper{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 3rem auto;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0,5)10px 10px 20px;
+}
+.inputBox{
+    border: none;
+    border-radius: 10px;
+    margin: 0.5rem;
+    padding: 1rem;
+    background: grey;
+    outline: none;
+}
+.inputBox ::placeholder{
+    color: wheat;
+}
+.titleInput{
+    font-size: 1.5rem;
+    color: blue;
+}
+.description{
+    font-size: 1.1rem;
+    min-height: 100px;
+    min-width: 400px;
+    color: green;
+    resize: none;
+}
+.addButton{
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, rgb(114, 248, 185), rgb(82, 171, 240));
+    margin: 0.5rem auto;
+    padding: 0.5rem 4.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
